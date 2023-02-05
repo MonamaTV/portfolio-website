@@ -30,6 +30,7 @@
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px;
+  font-size: 13px;
   display: inline-block;
 }
 
@@ -59,15 +60,6 @@
   padding: 30px;
 }
 
-.about a {
-  background: #fff;
-  padding: 7px 10px;
-  border-radius: 5px;
-  color: rgb(35, 167, 190);
-  font-size: 12px;
-  text-decoration: none;
-}
-
 .content {
   width: 90%;
   padding-right: 40px;
@@ -82,4 +74,72 @@
   width: 300px;
   object-fit: cover;
   object-position: top;
+}
+
+footer {
+  background-color: #fff;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  padding-top: 40px;
+}
+
+.contacts h3,
+.links h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.contacts ul,
+.links ul {
+  list-style: none;
+}
+.contacts ul li,
+.links ul li {
+  font-size: 13px;
+  padding-left: 10px;
+  margin: 3px 0;
+}
+
+/* The about me page */
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  /* align-items: center; */
+  padding: 10px;
+}
+
+.main .content {
+  width: 100%;
+  background: rgb(35, 167, 190);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .content h1 {
+  color: #fff;
+}
+.main .content p {
+  font-size: 12px;
+}
+
+.main img {
+  width: 300px;
+  height: 400px;
+}
+.main a {
+  background: #fff;
+  padding: 7px 10px;
+  border-radius: 5px;
+  color: rgb(35, 167, 190);
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
 }
