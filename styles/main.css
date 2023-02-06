@@ -164,7 +164,8 @@ footer {
   color: #fff;
 }
 .main .content p {
-  font-size: 12px;
+  color: #fff;
+  font-size: 14px;
 }
 
 .main img {
@@ -194,6 +195,9 @@ footer {
 
 .reach .content p {
   font-size: 13px;
+}
+.reach .content h3 {
+  color: rgb(35, 167, 190);
 }
 
 .reach form {
@@ -287,5 +291,12 @@ footer {
     height: 300px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
   }
 }
