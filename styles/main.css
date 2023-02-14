@@ -168,7 +168,7 @@ section.main {
 .main a {
   background: rgb(205, 74, 26);
   padding: 7px 10px;
-  color: rgb(35, 167, 190);
+  color: rgb(202, 205, 206);
   font-size: 12px;
   width: 100px;
   text-align: center;
@@ -316,7 +316,7 @@ section.main {
   color: #5d5656;
   font-size: 13px;
   padding: 2px 5px;
-  border: 1px solid #f6f3f3;
+  border: 1px solid #a6a6a6;
 }
 .stack *:hover {
   background: #5d56561b;
@@ -340,6 +340,14 @@ section.main {
 .project-content h3 {
   color: #5d5656;
 }
+.project-content a {
+  display: inline;
+  text-decoration: none;
+  font-size: 12px;
+}
+.project-content i {
+  margin: 0 3px;
+}
 .project .desc {
   font-size: 15px;
   margin-block: 10px;
@@ -352,10 +360,10 @@ section.main {
 
 .more {
   background-color: rgb(35, 167, 190);
-  padding: 7px 10px;
+  padding: 7px 20px;
   color: #ffffff;
   font-size: 12px;
-  width: 100px;
+  width: 200px;
   text-align: center;
   text-decoration: none;
 }
