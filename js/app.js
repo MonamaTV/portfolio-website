@@ -1,4 +1,4 @@
-const name = "Tadima Monama";
+const names = "Tadima Monama";
 const bio = `<p>
 I am a solution-driven person who seeks environments that challenge me
 to help widen my experience and grow on both personal and professional
@@ -16,6 +16,8 @@ TypeScript, Firebase and more. Most importantly, a desire to always
 want to learn more is one of my attributes.
 </p><br />
 <a href="./contacts.html">Reach out</a>`;
+
+const miniBio = `I am a solution-driven person who seeks environments that challenge me to help widen my experience and grow on both personal and professional levels. My key strengths are my abilities to solve problems and perform very well under pressure, including carrying out instructions. I enjoy working within environments that allow collaborative efforts – you get to learn a lot from people with different experience and skill sets.`;
 
 const projects = [
   {
@@ -65,7 +67,11 @@ const projects = [
 ];
 
 function displayProjects() {
-  const projectsDiv = document.querySelector("#projects");
+  const projectsDiv = document.querySelector("#projects") ?? null;
+
+  if (!projectsDiv) return;
+
+  document.querySelector(".main .content").innerHTML += bio;
 
   projects.forEach((project, index) => {
     const stacks = project.stack.map((st) => `<p>${st}</p>`);
@@ -98,5 +104,6 @@ function displayProjects() {
 
 window.addEventListener("load", () => {
   displayProjects();
-  document.querySelector(".main .content").innerHTML += bio;
 });
+document.querySelector(".about .content p").textContent = miniBio;
+document.querySelector(".about .content h1").textContent = names;
